@@ -1,0 +1,41 @@
+**Q1.** You are working on a project and have some changes. How do you bring your uncommitted changes to a new branch?
+
+The command you should run is: ________git checkout -b new-branch ; git add . ______________
+
+**Q2.** When remote repository has some changes that your local machine doesn’t have, the command to apply the remote changes to your local repository you should run is: _______git pull .______
+
+**Q3.** In git VCS, the code can be in three “areas”: working directory, ____staging directory_____, and git directory. (This is the area the file changes would be in after you run the command git add <file-name>.)
+
+---
+
+### Q4 : What was the intent of the authors ? (DOK level 3)
+
+You are given the following sequence of Git commands. Your task is to write what the author intended to achieve with each command or set of commands. Fill in the blanks with what those set of commands achieve. Limit your response to the space provided.
+
+```
+git pull origin main
+git checkout -b bugfix/missing-button
+```
+
+**Intent:** ___Make a new branch for a bug fix for a missing button____
+
+```
+git add button.js
+git commit -m "Fix missing submit button on login page"
+```
+
+**Intent:** _____Staged the changes to button.js and then committed it____________
+
+```
+git checkout main
+git pull origin main
+git merge bugfix/missing-button --no-ff
+```
+
+**Intent:** __Merge the bug fix branch back to main after making sure main has the latest changes by taking a pull___ (direction matters!)
+
+```
+git push origin main
+```
+
+**Intent:** ___Push the local main branch to the origin, which was the default remote branch. and update the origin/main with it___________
