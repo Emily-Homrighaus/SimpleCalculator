@@ -1,0 +1,2 @@
+It knows that there are new commits on the repository and there might be conflicts.
+The same line in the same function was changed and that caused a conflict. The markers showed the differences between the pulled version and the local changes. We chose the + version because it was shorter and easier to read. We checked the commit on the repository to make sure it was clean.
